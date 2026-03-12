@@ -12,7 +12,7 @@ export function Hero() {
   return (
     <section id="hero" className="section-divider relative pt-10 sm:pt-14">
       <Container>
-        <div className="glass-panel relative overflow-hidden rounded-[2rem] px-6 py-12 sm:px-10 sm:py-14 lg:px-16 lg:py-20">
+        <div className="glass-panel relative overflow-hidden rounded-[2rem] px-5 py-11 sm:px-10 sm:py-14 lg:px-16 lg:py-20">
           <div className="hero-grid absolute inset-0 opacity-70" />
           <div className="absolute inset-x-0 top-0 h-px bg-gradient-to-r from-transparent via-accent/40 to-transparent" />
           <div className="relative grid gap-10 lg:grid-cols-[1.2fr_0.8fr] lg:items-end">
@@ -27,9 +27,11 @@ export function Hero() {
                 Vi skapar genomtänkta lösningar inom skylt, print, skyddsfilm, webb, appar och
                 digitala verktyg. Praktiskt förankrat. Visuellt tydligt. Tekniskt genomarbetat.
               </p>
-              <div className="mt-9 flex flex-col gap-3 sm:flex-row">
-                <Button href="#kontakt">Boka ett första möte</Button>
-                <Button href="#tjanster" variant="secondary">
+              <div className="mt-9 flex flex-col items-start gap-3 sm:flex-row sm:items-center">
+                <Button href="#kontakt" className="min-h-[3.25rem] px-6 py-3.5">
+                  Boka ett första möte
+                </Button>
+                <Button href="#tjanster" variant="secondary" className="min-h-[3.25rem] px-6 py-3.5">
                   Se våra tjänster
                 </Button>
               </div>
