@@ -26,11 +26,11 @@ export function Contact() {
                   Kontakt
                 </p>
                 <h2 className="mt-5 font-display text-4xl font-semibold tracking-[-0.05em] text-foreground sm:text-5xl">
-                  Har du ett projekt, en idé eller ett behov som kräver mer än en standardlösning?
+                  Behöver du hjälp med dekor och profil, skyddsfilm eller ett digitalt verktyg?
                 </h2>
                 <p className="mt-6 max-w-xl text-base leading-8 text-muted">
-                  Vi hjälper företag som vill samla design, produktion och digital utveckling i en
-                  tydlig process. Beskriv vad du behöver, så tar vi nästa steg tillsammans.
+                  Vi hjälper företag som vill samla form, funktion och genomförande i en tydlig
+                  process. Beskriv uppdraget kort, så tar vi nästa steg tillsammans.
                 </p>
                 <div className="mt-8 flex flex-wrap gap-3">
                   <Button href="mailto:hej@tre60grader.se">Kontakta oss</Button>
@@ -85,7 +85,7 @@ export function Contact() {
                     </label>
                     <textarea
                       id="message"
-                      placeholder="Kort beskrivning av projektet"
+                      placeholder="Exempel: dekor till butik, skyddsfilm till kontor eller ett internt digitalt verktyg"
                       rows={4}
                       className="rounded-2xl border border-border bg-white px-4 py-3 text-sm outline-none placeholder:text-muted focus:border-accent/40"
                     />

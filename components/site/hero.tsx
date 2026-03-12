@@ -20,10 +20,10 @@ export function Hero() {
               <p className="mb-6 text-xs font-semibold uppercase tracking-[0.28em] text-accent">
                 Tre60 Grader
               </p>
-              <h1 className="max-w-[11ch] font-display text-[3.35rem] leading-[0.94] font-semibold tracking-[-0.075em] text-foreground sm:max-w-[12ch] sm:text-6xl sm:tracking-[-0.06em] lg:max-w-none lg:text-7xl">
+              <h1 className="max-w-[10ch] font-display text-[2.65rem] leading-[0.96] font-semibold tracking-[-0.065em] text-foreground min-[430px]:text-[2.95rem] sm:max-w-[12ch] sm:text-6xl sm:tracking-[-0.06em] lg:max-w-none lg:text-7xl">
                 Design, produktion och digital teknik i en sammanhållen riktning.
               </h1>
-              <p className="mt-6 max-w-[32rem] text-[1.05rem] leading-8 text-muted sm:text-lg">
+              <p className="mt-5 max-w-[30rem] text-[1rem] leading-7 text-muted sm:mt-6 sm:max-w-[32rem] sm:text-lg sm:leading-8">
                 Vi skapar genomtänkta lösningar inom dekor och profil, skyddsfilm samt digitala
                 verktyg och appar. Praktiskt förankrat. Visuellt tydligt. Tekniskt genomarbetat.
               </p>
