@@ -10,12 +10,12 @@ export function Services() {
         <Reveal>
           <SectionHeading
             eyebrow="Tjänster"
-            title="Kreativ produktion och digital utveckling utan onödiga skarvar."
-            description="Vi arbetar brett, men med tydlig struktur. Varje leverans ska vara visuellt stark, tekniskt hållbar och anpassad efter sammanhanget."
+            title="Tre kärnområden med tydlig koppling mellan form, funktion och genomförande."
+            description="Vi fokuserar på tre områden där fysisk produktion och digital kompetens möts naturligt. Varje leverans ska vara visuellt stark, tekniskt hållbar och relevant i praktiken."
           />
         </Reveal>
 
-        <div className="mt-12 grid gap-5 md:grid-cols-2 xl:grid-cols-3">
+        <div className="mt-12 grid gap-5 xl:grid-cols-3">
           {serviceItems.map((service, index) => (
             <Reveal key={service.title} delay={index * 90}>
               <article className="group glass-panel h-full rounded-[1.75rem] p-6">

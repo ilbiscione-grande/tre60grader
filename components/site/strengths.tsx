@@ -4,20 +4,20 @@ import { SectionHeading } from "@/components/ui/section-heading";
 
 const strengths = [
   {
-    title: "Helhetslösningar",
-    body: "En kontaktpunkt för idé, form, produktion och teknisk implementation.",
+    title: "Tre tydliga fokusområden",
+    body: "Dekor och profil, skyddsfilm samt digitala verktyg och appar samlas i ett mer koncentrerat erbjudande.",
   },
   {
-    title: "Design + produktion + teknik",
-    body: "Starkare leveranser när det visuella och det praktiska utvecklas tillsammans.",
+    title: "Form och funktion samtidigt",
+    body: "Det visuella uttrycket utvecklas parallellt med materialval, montering, användning och teknisk funktion.",
   },
   {
-    title: "Digital kompetens",
-    body: "Webb, appar och specialverktyg som kompletterar den fysiska närvaron.",
+    title: "Praktisk digital kompetens",
+    body: "Appar och specialverktyg byggs som ett konkret stöd till verksamheten, inte som fristående teknikprojekt.",
   },
   {
-    title: "Lokalt engagemang",
-    body: "Nära kundrelationer med ett arbetssätt som också möter framtidens krav.",
+    title: "Lokal närvaro, lång sikt",
+    body: "Nära kunddialog kombineras med lösningar som ska hålla i drift, uttryck och relevans över tid.",
   },
 ];
 
@@ -28,8 +28,8 @@ export function Strengths() {
         <Reveal>
           <SectionHeading
             eyebrow="Styrkor"
-            title="Byggt för företag som vill ha kvalitet, tydlighet och rätt nivå av teknik."
-            description="Vi prioriterar genomförbarhet, precision och långsiktighet. Resultatet ska fungera i vardagen, hålla över tid och representera varumärket med rätt ton."
+            title="Fokuserat nog för att vara tydligt. Bredd nog för att lösa helheten."
+            description="Vi prioriterar genomförbarhet, precision och rätt ambitionsnivå. Resultatet ska fungera i vardagen, hålla över tid och bära varumärket med en lugn och säker ton."
             align="center"
           />
         </Reveal>

@@ -4,7 +4,7 @@ import { Reveal } from "@/components/ui/reveal";
 
 const metrics = [
   { value: "360°", label: "Helhet från idé till leverans" },
-  { value: "5", label: "Kärnområden under samma tak" },
+  { value: "3", label: "Kärnområden under samma tak" },
   { value: "Lokal", label: "Närvaro med digital räckvidd" },
 ];
 
@@ -24,8 +24,8 @@ export function Hero() {
                 Design, produktion och digital teknik i en sammanhållen riktning.
               </h1>
               <p className="mt-6 max-w-[32rem] text-[1.05rem] leading-8 text-muted sm:text-lg">
-                Vi skapar genomtänkta lösningar inom skylt, print, skyddsfilm, webb, appar och
-                digitala verktyg. Praktiskt förankrat. Visuellt tydligt. Tekniskt genomarbetat.
+                Vi skapar genomtänkta lösningar inom dekor och profil, skyddsfilm samt digitala
+                verktyg och appar. Praktiskt förankrat. Visuellt tydligt. Tekniskt genomarbetat.
               </p>
               <div className="mt-9 flex flex-col items-start gap-3 sm:flex-row sm:items-center">
                 <Button href="#kontakt" className="min-h-[3.25rem] px-6 py-3.5">

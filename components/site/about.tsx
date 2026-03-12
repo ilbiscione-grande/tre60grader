@@ -3,10 +3,10 @@ import { Reveal } from "@/components/ui/reveal";
 import { SectionHeading } from "@/components/ui/section-heading";
 
 const principles = [
-  "Praktiskt hantverk med respekt för material, miljö och slutresultat.",
-  "Modern designmetodik som skapar tydlighet i både uttryck och funktion.",
-  "Teknisk problemlösning där webb, appar och automation får en konkret roll.",
-  "Skräddarsydda upplägg som utgår från behov, inte standardpaket.",
+  "Dekor och profil utvecklas med respekt för material, ytor och hur lösningen faktiskt ska användas.",
+  "Skyddsfilm planeras med fokus på funktion, hållbarhet och ett rent visuellt resultat.",
+  "Digitala verktyg och appar byggs för tydliga flöden, konkret nytta och långsiktig användning.",
+  "Varje uppdrag formas efter behovet, inte efter färdiga paket eller onödigt komplexa upplägg.",
 ];
 
 export function About() {
@@ -17,8 +17,8 @@ export function About() {
           <Reveal>
             <SectionHeading
               eyebrow="Arbetssätt"
-              title="Ett lugnt, exakt och lösningsorienterat sätt att bygga värde."
-              description="Tre60 Grader förenar fysisk produktion med digital kompetens. Det gör att idéer kan omsättas snabbare, med bättre kontroll och en tydligare helhet."
+              title="Tre områden. Ett sammanhållet arbetssätt med samma krav på precision."
+              description="Tre60 Grader arbetar i skärningen mellan fysisk miljö och digital funktion. Det gör att dekor, skyddsfilm och digitala lösningar kan utvecklas med bättre kontroll, tydligare prioriteringar och en mer sammanhållen helhet."
             />
           </Reveal>
 

@@ -21,7 +21,7 @@ export function Header() {
               <p className="font-display text-sm font-semibold tracking-[0.02em] text-foreground">
                 Tre60 Grader
               </p>
-              <p className="text-xs text-muted">Design, produktion och digital utveckling</p>
+              <p className="text-xs text-muted">Dekor, skyddsfilm och digitala verktyg</p>
             </div>
           </a>
 
