@@ -43,6 +43,11 @@ body {
   background: transparent;
 }
 
+.site-container {
+  padding-left: max(1.35rem, env(safe-area-inset-left));
+  padding-right: max(1.35rem, env(safe-area-inset-right));
+}
+
 ::selection {
   background: rgba(40, 120, 255, 0.18);
 }
@@ -152,5 +157,19 @@ button {
   .reveal.is-visible {
     opacity: 1;
     transform: none;
+  }
+}
+
+@media (min-width: 640px) {
+  .site-container {
+    padding-left: max(2rem, env(safe-area-inset-left));
+    padding-right: max(2rem, env(safe-area-inset-right));
+  }
+}
+
+@media (min-width: 1024px) {
+  .site-container {
+    padding-left: max(3rem, env(safe-area-inset-left));
+    padding-right: max(3rem, env(safe-area-inset-right));
   }
 }

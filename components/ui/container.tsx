@@ -13,7 +13,7 @@ export function Container({
 }: ContainerProps) {
   return (
     <Component
-      className={cn("relative mx-auto w-full max-w-7xl px-6 sm:px-8 lg:px-12", className)}
+      className={cn("site-container relative mx-auto w-full max-w-7xl", className)}
     >
       {children}
     </Component>

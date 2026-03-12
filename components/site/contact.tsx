@@ -48,10 +48,12 @@ export function Contact() {
                       <a
                         key={item.label}
                         href={item.href}
-                        className="flex items-center justify-between gap-4 rounded-2xl border border-border px-4 py-4 text-sm hover:border-accent/30 hover:bg-accent-soft/40"
+                        className="flex flex-col items-start gap-2 rounded-2xl border border-border px-4 py-4 text-sm hover:border-accent/30 hover:bg-accent-soft/40 sm:flex-row sm:items-center sm:justify-between sm:gap-4"
                       >
                         <span className="text-muted">{item.label}</span>
-                        <span className="font-medium text-foreground">{item.value}</span>
+                        <span className="break-all text-left font-medium text-foreground sm:text-right">
+                          {item.value}
+                        </span>
                       </a>
                     ))}
                   </div>
