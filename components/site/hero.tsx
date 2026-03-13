@@ -29,18 +29,18 @@ export function Hero() {
 
       <Parallax
         offset={16}
-        className="pointer-events-none absolute right-[8%] top-[18%] hidden h-64 w-64 rounded-full bg-cyan-300/16 blur-3xl lg:block"
+        className="pointer-events-none absolute right-[8%] top-[18%] hidden h-64 w-64 rounded-full bg-white/8 blur-3xl lg:block"
       />
       <Parallax
         offset={24}
-        className="pointer-events-none absolute left-[-6rem] bottom-[16%] hidden h-72 w-72 rounded-full bg-accent/14 blur-3xl lg:block"
+        className="pointer-events-none absolute left-[-6rem] bottom-[16%] hidden h-72 w-72 rounded-full bg-white/6 blur-3xl lg:block"
       />
 
       <Container className="relative min-h-[100svh] pb-10 pt-28 sm:pb-12 sm:pt-32 lg:pb-14 lg:pt-36">
         <div className="flex min-h-[calc(100svh-7rem)] flex-col justify-end gap-6 lg:block">
           <Reveal className="lg:absolute lg:left-0 lg:top-[22vh] lg:max-w-4xl">
             <div className="max-w-4xl">
-              <p className="mb-5 text-xs font-semibold uppercase tracking-[0.28em] text-cyan-200">
+              <p className="mb-5 text-xs font-semibold uppercase tracking-[0.28em] text-white/58">
                 Tre60 Grader
               </p>
               <h1 className="max-w-[11ch] font-display text-[2.35rem] leading-[0.94] font-semibold tracking-[-0.065em] text-white min-[430px]:text-[2.7rem] sm:max-w-[12ch] sm:text-[4.15rem] lg:max-w-[11ch] lg:text-[5.9rem]">
@@ -51,7 +51,7 @@ export function Hero() {
 
           <Reveal delay={80} className="lg:absolute lg:right-0 lg:top-[20vh] lg:max-w-sm">
             <div className="hero-content-panel rounded-[1.65rem] border border-white/10 bg-white/8 p-5 backdrop-blur-md">
-              <p className="text-xs font-semibold uppercase tracking-[0.24em] text-cyan-200">
+              <p className="text-xs font-semibold uppercase tracking-[0.24em] text-white/58">
                 Kärnområden
               </p>
               <div className="mt-4 grid gap-3 text-sm leading-7 text-white/72">
