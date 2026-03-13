@@ -14,23 +14,22 @@ const manrope = Manrope({
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://tre60grader.se"),
-  title: "Tre60 Grader | Design, produktion och digital utveckling",
+  title: "Tre60 Grader | Ny webbplats kommer snart",
   description:
-    "Tre60 Grader skapar genomtänkta lösningar inom skylt, print, skyddsfilm, webb, appar och digitala verktyg.",
+    "Tre60 Grader lanserar snart en ny webbplats. Kontakta oss redan nu för dekor och profil, skyddsfilm samt digitala verktyg och appar.",
   keywords: [
     "Tre60 Grader",
-    "skylt",
-    "print",
+    "dekor",
+    "profil",
     "solfilm",
     "skyddsfilm",
-    "webb",
     "appar",
     "digitala verktyg",
   ],
   openGraph: {
     title: "Tre60 Grader",
     description:
-      "Modern kreativ och teknisk partner inom design, produktion och digital utveckling.",
+      "Ny webbplats kommer snart. Kontakta Tre60 Grader redan nu för dekor, skyddsfilm och digitala verktyg.",
     url: "https://tre60grader.se",
     siteName: "Tre60 Grader",
     locale: "sv_SE",
