@@ -14,7 +14,7 @@ export function Hero() {
           playsInline
           poster="/hero-poster.svg"
         >
-          <source src="/hero-loop.mp4" type="video/mp4" />
+          <source src="/hero_loop.mp4" type="video/mp4" />
         </video>
         <div className="hero-video-overlay absolute inset-0" />
         <div className="absolute inset-0 opacity-30 hero-grid mix-blend-screen" />
