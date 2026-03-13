@@ -23,7 +23,11 @@ const steps = [
 
 export function Process() {
   return (
-    <section id="process" className="section-divider snap-section flex min-h-screen items-center py-24 sm:py-28">
+    <section
+      id="process"
+      className="section-divider snap-section flex min-h-screen items-center py-24 sm:py-28"
+      data-snap-section
+    >
       <Container>
         <Reveal>
           <SectionHeading
