@@ -36,21 +36,44 @@ export function Hero() {
         className="pointer-events-none absolute left-[-6rem] bottom-[16%] hidden h-72 w-72 rounded-full bg-accent/14 blur-3xl lg:block"
       />
 
-      <Container className="relative flex min-h-[100svh] items-end pb-10 pt-28 sm:pb-12 sm:pt-32 lg:pb-14 lg:pt-36">
-        <div className="grid w-full gap-8 lg:grid-cols-[1.08fr_0.92fr] lg:items-end lg:gap-10">
-          <Reveal className="max-w-4xl">
-            <div className="hero-content-panel rounded-[2rem] border border-white/10 bg-white/8 p-5 backdrop-blur-md sm:p-7 lg:p-8">
+      <Container className="relative min-h-[100svh] pb-10 pt-28 sm:pb-12 sm:pt-32 lg:pb-14 lg:pt-36">
+        <div className="flex min-h-[calc(100svh-7rem)] flex-col justify-end gap-6 lg:block">
+          <Reveal className="lg:absolute lg:left-0 lg:top-[22vh] lg:max-w-4xl">
+            <div className="max-w-4xl">
               <p className="mb-5 text-xs font-semibold uppercase tracking-[0.28em] text-cyan-200">
                 Tre60 Grader
               </p>
-              <h1 className="max-w-[11ch] font-display text-[2.35rem] leading-[0.95] font-semibold tracking-[-0.065em] text-white min-[430px]:text-[2.7rem] sm:max-w-[12ch] sm:text-[4.25rem] lg:max-w-[11ch] lg:text-[5.9rem]">
+              <h1 className="max-w-[11ch] font-display text-[2.35rem] leading-[0.94] font-semibold tracking-[-0.065em] text-white min-[430px]:text-[2.7rem] sm:max-w-[12ch] sm:text-[4.15rem] lg:max-w-[11ch] lg:text-[5.9rem]">
                 Design, produktion och digital teknik i en sammanhållen riktning.
               </h1>
-              <p className="mt-5 max-w-[34rem] text-[1rem] leading-7 text-white/74 sm:mt-6 sm:text-[1.05rem] sm:leading-8">
+            </div>
+          </Reveal>
+
+          <Reveal delay={80} className="lg:absolute lg:right-0 lg:top-[20vh] lg:max-w-sm">
+            <div className="hero-content-panel rounded-[1.65rem] border border-white/10 bg-white/8 p-5 backdrop-blur-md">
+              <p className="text-xs font-semibold uppercase tracking-[0.24em] text-cyan-200">
+                Kärnområden
+              </p>
+              <div className="mt-4 grid gap-3 text-sm leading-7 text-white/72">
+                <p>Dekor & profil för tydlig fysisk närvaro.</p>
+                <p>Skyddsfilm med fokus på funktion och finish.</p>
+                <p>Digitala verktyg & appar som löser konkreta behov.</p>
+              </div>
+            </div>
+          </Reveal>
+
+          <Reveal delay={140} className="lg:absolute lg:left-0 lg:bottom-12 lg:max-w-md">
+            <div className="hero-content-panel rounded-[1.65rem] border border-white/10 bg-white/8 p-5 backdrop-blur-md">
+              <p className="text-[1rem] leading-7 text-white/74 sm:text-[1.05rem] sm:leading-8">
                 Vi skapar genomtänkta lösningar inom dekor och profil, skyddsfilm samt digitala
                 verktyg och appar. Praktiskt förankrat. Visuellt tydligt. Tekniskt genomarbetat.
               </p>
-              <div className="mt-8 flex flex-col items-start gap-3 sm:flex-row sm:items-center">
+            </div>
+          </Reveal>
+
+          <Reveal delay={180} className="lg:absolute lg:right-0 lg:bottom-12 lg:w-[28rem]">
+            <div className="grid gap-4">
+              <div className="flex flex-col items-start gap-3 sm:flex-row sm:flex-wrap sm:items-center">
                 <Button href="#kontakt" className="min-h-[3.25rem] px-6 py-3.5">
                   Boka ett första möte
                 </Button>
@@ -62,29 +85,12 @@ export function Hero() {
                   Se våra tjänster
                 </Button>
               </div>
-            </div>
-          </Reveal>
-
-          <Reveal delay={120}>
-            <div className="grid gap-4">
-              <div className="hero-content-panel rounded-[1.8rem] border border-white/10 bg-white/8 p-5 backdrop-blur-md sm:p-6">
-                <p className="text-xs font-semibold uppercase tracking-[0.24em] text-cyan-200">
-                  Intro
-                </p>
-                <p className="mt-3 font-display text-2xl font-semibold tracking-[-0.04em] text-white">
-                  Helskärmsvideo i toppen med lågmäld rörelse och stark typografisk kontrast.
-                </p>
-                <p className="mt-4 text-sm leading-7 text-white/68">
-                  Lägg din egen film som <span className="font-medium text-white/82">`/public/hero-loop.mp4`</span>.
-                  Om filen saknas visas posterbilden automatiskt.
-                </p>
-              </div>
 
               <div className="grid gap-4 sm:grid-cols-3 lg:grid-cols-1 xl:grid-cols-3">
                 {metrics.map((item) => (
                   <div
                     key={item.label}
-                    className="hero-content-panel rounded-[1.5rem] border border-white/10 bg-white/8 p-5 backdrop-blur-md transition-transform duration-200 hover:-translate-y-1"
+                    className="hero-content-panel rounded-[1.35rem] border border-white/10 bg-white/8 p-4 backdrop-blur-md transition-transform duration-200 hover:-translate-y-1"
                   >
                     <p className="font-display text-2xl font-semibold tracking-[-0.04em] text-white">
                       {item.value}
@@ -95,6 +101,16 @@ export function Hero() {
               </div>
             </div>
           </Reveal>
+
+          <div className="hidden lg:absolute lg:bottom-12 lg:left-1/2 lg:block lg:-translate-x-1/2">
+            <a
+              href="#tjanster"
+              className="inline-flex items-center gap-3 text-sm uppercase tracking-[0.22em] text-white/54 hover:text-white/82"
+            >
+              Scrolla vidare
+              <span className="h-px w-12 bg-white/28" />
+            </a>
+          </div>
         </div>
       </Container>
     </section>
