@@ -31,7 +31,7 @@ export function Hero() {
 
       <div className="relative min-h-[100svh] pb-10 pt-28 sm:pb-12 sm:pt-32 lg:pb-14 lg:pt-36">
         <Container className="flex min-h-[calc(100svh-7rem)] flex-col justify-end gap-6 lg:block">
-          <Reveal className="lg:absolute lg:left-[max(1.35rem,env(safe-area-inset-left))] lg:top-[22vh] lg:max-w-4xl xl:left-[max(3rem,env(safe-area-inset-left))]">
+          <Reveal className="lg:absolute lg:left-[max(1.35rem,env(safe-area-inset-left))] lg:top-[15vh] lg:max-w-4xl xl:left-[max(3rem,env(safe-area-inset-left))]">
             <div className="max-w-4xl">
               <p className="mb-5 text-xs font-semibold uppercase tracking-[0.28em] text-white/58">
                 Tre60 Grader
@@ -57,8 +57,8 @@ export function Hero() {
             </div>
           </Reveal>
 
-          <Reveal delay={140} className="lg:absolute lg:left-[max(1.35rem,env(safe-area-inset-left))] lg:bottom-12 lg:max-w-md xl:left-[max(3rem,env(safe-area-inset-left))]">
-            <div className="rounded-[1.65rem] bg-black/16 p-5 backdrop-blur-[6px]">
+          <Reveal delay={140} className="lg:absolute lg:left-[max(1.35rem,env(safe-area-inset-left))] lg:bottom-8 lg:max-w-sm xl:left-[max(3rem,env(safe-area-inset-left))]">
+            <div className="rounded-[1.4rem] bg-black/22 p-4 backdrop-blur-[6px]">
               <p className="text-[1rem] leading-7 text-white/74 sm:text-[1.05rem] sm:leading-8">
                 Vi skapar genomtänkta lösningar inom dekor och profil, skyddsfilm samt digitala
                 verktyg och appar. Praktiskt förankrat. Visuellt tydligt. Tekniskt genomarbetat.
