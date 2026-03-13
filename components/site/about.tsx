@@ -11,7 +11,7 @@ const principles = [
 
 export function About() {
   return (
-    <section id="om" className="section-divider py-24 sm:py-28">
+    <section id="om" className="section-divider snap-section flex min-h-screen items-center py-24 sm:py-28">
       <Container>
         <div className="grid gap-10 lg:grid-cols-[0.9fr_1.1fr] lg:items-start">
           <Reveal>

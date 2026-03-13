@@ -16,7 +16,7 @@ const socials = [
 
 export function Contact() {
   return (
-    <section id="kontakt" className="py-24 sm:py-28">
+    <section id="kontakt" className="snap-section flex min-h-screen items-center py-24 sm:py-28">
       <Container>
         <Reveal>
           <div className="glass-panel overflow-hidden rounded-[2rem] p-6 sm:p-8 lg:p-12">

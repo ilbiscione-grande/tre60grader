@@ -23,7 +23,7 @@ const strengths = [
 
 export function Strengths() {
   return (
-    <section id="styrkor" className="section-divider py-24 sm:py-28">
+    <section id="styrkor" className="section-divider snap-section flex min-h-screen items-center py-24 sm:py-28">
       <Container>
         <Reveal>
           <SectionHeading

@@ -4,7 +4,7 @@ import { Reveal } from "@/components/ui/reveal";
 
 export function Hero() {
   return (
-    <section id="hero" className="section-divider relative min-h-[100svh] overflow-hidden">
+    <section id="hero" className="section-divider snap-section relative min-h-[100svh] overflow-hidden">
       <div className="absolute inset-0 bg-slate-950">
         <video
           className="absolute inset-0 h-full w-full object-cover"

@@ -9,7 +9,7 @@ import { Strengths } from "@/components/site/strengths";
 
 export function FullHome() {
   return (
-    <main className="page-shell min-h-screen">
+    <main className="page-shell preview-shell h-screen overflow-y-auto overflow-x-hidden">
       <Header />
       <Hero />
       <Services />

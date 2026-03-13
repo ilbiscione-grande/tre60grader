@@ -67,6 +67,16 @@ button {
   overflow: clip;
 }
 
+.preview-shell {
+  scroll-snap-type: y proximity;
+  scrollbar-gutter: stable;
+}
+
+.snap-section {
+  scroll-snap-align: start;
+  scroll-snap-stop: always;
+}
+
 .page-shell::before,
 .page-shell::after {
   content: "";
@@ -185,5 +195,9 @@ button {
   .site-container {
     padding-left: max(3rem, env(safe-area-inset-left));
     padding-right: max(3rem, env(safe-area-inset-right));
+  }
+
+  .preview-shell {
+    scroll-snap-type: y mandatory;
   }
 }
