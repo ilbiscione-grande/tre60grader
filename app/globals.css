@@ -70,13 +70,8 @@ button {
 .preview-shell {
   overflow-x: hidden;
   overflow-y: auto;
-  scroll-snap-type: y proximity;
+  scroll-snap-type: none;
   scrollbar-gutter: stable;
-}
-
-.snap-section {
-  scroll-snap-align: start;
-  scroll-snap-stop: always;
 }
 
 .page-shell::before,
@@ -201,5 +196,10 @@ button {
 
   .preview-shell {
     scroll-snap-type: y mandatory;
+  }
+
+  .snap-section {
+    scroll-snap-align: start;
+    scroll-snap-stop: always;
   }
 }

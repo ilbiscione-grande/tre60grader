@@ -7,8 +7,13 @@ const SECTION_SELECTOR = "[data-snap-section]";
 export function PreviewScrollController() {
   useEffect(() => {
     const shell = document.querySelector<HTMLElement>("[data-preview-shell]");
+    const desktopQuery = window.matchMedia("(min-width: 1024px)");
 
-    if (!shell || window.matchMedia("(prefers-reduced-motion: reduce)").matches) {
+    if (
+      !shell ||
+      window.matchMedia("(prefers-reduced-motion: reduce)").matches ||
+      !desktopQuery.matches
+    ) {
       return;
     }
 
