@@ -1,13 +1,6 @@
-import { Button } from "@/components/ui/button";
 import { Container } from "@/components/ui/container";
 import { Parallax } from "@/components/ui/parallax";
 import { Reveal } from "@/components/ui/reveal";
-
-const metrics = [
-  { value: "360°", label: "Helhet från idé till leverans" },
-  { value: "3", label: "Kärnområden under samma tak" },
-  { value: "Lokal", label: "Närvaro med digital räckvidd" },
-];
 
 export function Hero() {
   return (
@@ -36,20 +29,22 @@ export function Hero() {
         className="pointer-events-none absolute left-[-6rem] bottom-[16%] hidden h-72 w-72 rounded-full bg-white/6 blur-3xl lg:block"
       />
 
-      <Container className="relative min-h-[100svh] pb-10 pt-28 sm:pb-12 sm:pt-32 lg:pb-14 lg:pt-36">
-        <div className="flex min-h-[calc(100svh-7rem)] flex-col justify-end gap-6 lg:block">
-          <Reveal className="lg:absolute lg:left-0 lg:top-[22vh] lg:max-w-4xl">
+      <div className="relative min-h-[100svh] pb-10 pt-28 sm:pb-12 sm:pt-32 lg:pb-14 lg:pt-36">
+        <Container className="flex min-h-[calc(100svh-7rem)] flex-col justify-end gap-6 lg:block">
+          <Reveal className="lg:absolute lg:left-[max(1.35rem,env(safe-area-inset-left))] lg:top-[22vh] lg:max-w-4xl xl:left-[max(3rem,env(safe-area-inset-left))]">
             <div className="max-w-4xl">
               <p className="mb-5 text-xs font-semibold uppercase tracking-[0.28em] text-white/58">
                 Tre60 Grader
               </p>
-              <h1 className="max-w-[11ch] font-display text-[2.35rem] leading-[0.94] font-semibold tracking-[-0.065em] text-white min-[430px]:text-[2.7rem] sm:max-w-[12ch] sm:text-[4.15rem] lg:max-w-[11ch] lg:text-[5.9rem]">
-                Design, produktion och digital teknik i en sammanhållen riktning.
-              </h1>
+              <div className="inline-block rounded-[1.75rem] bg-black/18 px-4 py-4 backdrop-blur-[6px] sm:px-5 sm:py-5">
+                <h1 className="max-w-[11ch] font-display text-[2.35rem] leading-[0.94] font-semibold tracking-[-0.065em] text-white min-[430px]:text-[2.7rem] sm:max-w-[12ch] sm:text-[4.15rem] lg:max-w-[11ch] lg:text-[5.9rem]">
+                  Design, produktion och digital teknik i en sammanhållen riktning.
+                </h1>
+              </div>
             </div>
           </Reveal>
 
-          <Reveal delay={80} className="lg:absolute lg:right-0 lg:top-[20vh] lg:max-w-sm">
+          <Reveal delay={80} className="lg:absolute lg:right-[max(1.35rem,env(safe-area-inset-right))] lg:top-[20vh] lg:max-w-sm xl:right-[max(3rem,env(safe-area-inset-right))]">
             <div className="hero-content-panel rounded-[1.65rem] border border-white/10 bg-white/8 p-5 backdrop-blur-md">
               <p className="text-xs font-semibold uppercase tracking-[0.24em] text-white/58">
                 Kärnområden
@@ -62,43 +57,12 @@ export function Hero() {
             </div>
           </Reveal>
 
-          <Reveal delay={140} className="lg:absolute lg:left-0 lg:bottom-12 lg:max-w-md">
-            <div className="hero-content-panel rounded-[1.65rem] border border-white/10 bg-white/8 p-5 backdrop-blur-md">
+          <Reveal delay={140} className="lg:absolute lg:left-[max(1.35rem,env(safe-area-inset-left))] lg:bottom-12 lg:max-w-md xl:left-[max(3rem,env(safe-area-inset-left))]">
+            <div className="rounded-[1.65rem] bg-black/16 p-5 backdrop-blur-[6px]">
               <p className="text-[1rem] leading-7 text-white/74 sm:text-[1.05rem] sm:leading-8">
                 Vi skapar genomtänkta lösningar inom dekor och profil, skyddsfilm samt digitala
                 verktyg och appar. Praktiskt förankrat. Visuellt tydligt. Tekniskt genomarbetat.
               </p>
-            </div>
-          </Reveal>
-
-          <Reveal delay={180} className="lg:absolute lg:right-0 lg:bottom-12 lg:w-[28rem]">
-            <div className="grid gap-4">
-              <div className="flex flex-col items-start gap-3 sm:flex-row sm:flex-wrap sm:items-center">
-                <Button href="#kontakt" className="min-h-[3.25rem] px-6 py-3.5">
-                  Boka ett första möte
-                </Button>
-                <Button
-                  href="#tjanster"
-                  variant="secondary"
-                  className="min-h-[3.25rem] border-white/16 bg-white/10 px-6 py-3.5 text-white hover:border-white/28 hover:bg-white/14 hover:text-white"
-                >
-                  Se våra tjänster
-                </Button>
-              </div>
-
-              <div className="grid gap-4 sm:grid-cols-3 lg:grid-cols-1 xl:grid-cols-3">
-                {metrics.map((item) => (
-                  <div
-                    key={item.label}
-                    className="hero-content-panel rounded-[1.35rem] border border-white/10 bg-white/8 p-4 backdrop-blur-md transition-transform duration-200 hover:-translate-y-1"
-                  >
-                    <p className="font-display text-2xl font-semibold tracking-[-0.04em] text-white">
-                      {item.value}
-                    </p>
-                    <p className="mt-2 text-sm leading-6 text-white/68">{item.label}</p>
-                  </div>
-                ))}
-              </div>
             </div>
           </Reveal>
 
@@ -111,8 +75,8 @@ export function Hero() {
               <span className="h-px w-12 bg-white/28" />
             </a>
           </div>
-        </div>
-      </Container>
+        </Container>
+      </div>
     </section>
   );
 }

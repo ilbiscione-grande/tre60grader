@@ -6,12 +6,10 @@ import { Hero } from "@/components/site/hero";
 import { Process } from "@/components/site/process";
 import { Services } from "@/components/site/services";
 import { Strengths } from "@/components/site/strengths";
-import { SectionProgress } from "@/components/ui/section-progress";
 
 export function FullHome() {
   return (
     <main className="page-shell min-h-screen">
-      <SectionProgress />
       <Header />
       <Hero />
       <Services />
