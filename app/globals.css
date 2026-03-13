@@ -68,6 +68,8 @@ button {
 }
 
 .preview-shell {
+  overflow-x: hidden;
+  overflow-y: auto;
   scroll-snap-type: y proximity;
   scrollbar-gutter: stable;
 }
